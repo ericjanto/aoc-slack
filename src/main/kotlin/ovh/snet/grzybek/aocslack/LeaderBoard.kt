@@ -75,7 +75,7 @@ data class LeaderBoard(val ownerId: Int, val event: String, val members: Map<Str
 
     data class Star(val member: String, val day: Int, val star: Int) {
         fun getMessage(): String {
-            return "*${member}* received ${":star:".repeat(star)} for solving $day challenge :tada:\n"
+            return "*${member}* just solved part $star of day $day :tada:\n"
         }
     }
 }
